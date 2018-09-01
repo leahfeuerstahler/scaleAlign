@@ -21,9 +21,9 @@ get_ss <- function(dat){
   nobs <- apply(dat, 2, function(x) sum(!is.na(x)))
 
   # find the proportion of subjects who have reached at least each level
-  ss <- unlist(sapply(1:nitems, function(i){
+  ss <- as.numeric(unlist(sapply(1:nitems, function(i){
     (nobs[i] - cumsum(summary(factor(dat[, i])))[1:(ncats[i] - 1)]) / nobs[i]
-  }))
+  })))
 
   ss
 }

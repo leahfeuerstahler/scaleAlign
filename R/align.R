@@ -126,7 +126,7 @@
 #'  same logistic regression curve expresses the relationship between sufficient
 #'  statistics and Thurstone thresholds for all dimenisons.
 #'
-#'  @example
+#'  @examples
 #'
 #'  # two-dimensional model with 10 items on each dimension
 #'
